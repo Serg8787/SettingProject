@@ -33,15 +33,24 @@ class MainActivity : AppCompatActivity() {
             // Переключатель автосохранения
         val switchAutoSave = prefs.getBoolean("autosave", false)
         if(switchAutoSave){
-            tvAutoSave.text = "AutoSave is on"
+            tvAutoSave.text = "On"
         } else {
-            tvAutoSave.text = "AutoSave is off"
+            tvAutoSave.text = "Off"
         }
+        // Переключатель графики
         val switchGrafics = prefs.getBoolean("graphics", false)
         if(switchGrafics){
-            tvGraphics.text = "Graphics is High"
+            tvGraphics.text = "High"
         } else {
-            tvGraphics.text = "Grafics is Low"
+            tvGraphics.text = "Low"
+        }
+
+                // Переключатель языка
+        val switchLanguage = prefs.getBoolean("language", false)
+        if(switchLanguage){
+            tvLanguage.text = "RU"
+        } else {
+            tvLanguage.text = "EN"
         }
 
 
