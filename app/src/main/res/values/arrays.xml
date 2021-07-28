@@ -1,0 +1,31 @@
+<resources>
+    <string-array name="favoruite_genre_game">
+        <item>Strategy</item>
+        <item>Simulator</item>
+        <item>Action/RPG</item>
+        <item>Fighting</item>
+        <item>Adventure/Quest</item>
+        <item>Race</item>
+        <item>Puzzle</item>
+        <item>Table Games</item>
+    </string-array>
+    <string-array name="dark_mode_entries">
+        <item>Follow System Dark Mode</item>
+        <item>Light Mode Selected</item>
+        <item>Dark Mode Selected</item>
+        <item>Auto Battery Dark Mode</item>
+    </string-array>
+
+    <string-array name="genre_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+
+</resources>
