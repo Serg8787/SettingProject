@@ -22,6 +22,21 @@
                 android:action="android.intent.action.VIEW"
                 android:data="https://www.google.com.ua/?hl=ru" />
         </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Game Settings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:summary="Click to Switch On or Off"
+            android:title="Graphics low/high"
+            app:key="graphics" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:summary="Click to Switch On or Off"
+            android:title="AutoSave"
+            app:key="autosave" />
+
 
     </PreferenceCategory>
 

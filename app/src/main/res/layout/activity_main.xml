@@ -24,6 +24,22 @@
         android:textSize="30sp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/tvGraphics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/tvAutoSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
