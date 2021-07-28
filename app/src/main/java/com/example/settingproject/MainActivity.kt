@@ -1,5 +1,6 @@
 package com.example.settingproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,13 +18,33 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun mySettings() {
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+
+        // Имя геймера
         val name = prefs.getString("signature","")
         tvName.text = name
 
+            // Любимый жанр геймера
         val favoruiteJenre = prefs.getString("favoruite_jenre_list","")
         tvFavoruiteGameGenre.text = favoruiteJenre
+
+            // Переключатель автосохранения
+        val switchAutoSave = prefs.getBoolean("autosave", false)
+        if(switchAutoSave){
+            tvAutoSave.text = "AutoSave is on"
+        } else {
+            tvAutoSave.text = "AutoSave is off"
+        }
+        val switchGrafics = prefs.getBoolean("graphics", false)
+        if(switchGrafics){
+            tvGraphics.text = "Graphics is High"
+        } else {
+            tvGraphics.text = "Grafics is Low"
+        }
+
+
     }
 
     // Вверхнее меню
